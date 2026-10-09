@@ -1,0 +1,53 @@
+### **1\. Giao diện Người dùng (Client-side UI): Video #1 – Video #19**
+
+Giai đoạn này tập trung xây dựng toàn bộ các trang và thành phần tương tác của khách hàng bằng **React JS, Material UI, Tailwind CSS** và **Swiper Slider**:
+
+* **Layout dùng chung &amp; Thanh điều hướng (Header &amp; Navigation)**:
+  * **Top Strip**: Dải thanh trên cùng chứa thông báo mỏng và các liên kết phụ (Help Center, Order Tracking).
+  * **Main Header**: Logo thương hiệu, ô tìm kiếm sản phẩm (Search Box), menu chọn vị trí/quốc gia, các nút So sánh (Compare), Yêu thích (Wishlist), Tài khoản và Giỏ hàng có gắn đếm số lượng (**Material UI Badge**).
+  * **Category Drawer / Panel**: Menu trượt danh mục sản phẩm sổ ra từ bên hông (Shop by Category).
+  * **Cart Panel**: Bảng xem nhanh giỏ hàng dạng trượt (Material UI Drawer) hiển thị danh sách sản phẩm đã chọn, số lượng và tổng tiền.
+* **Trang chủ (Home Page)**:
+  * Khối banner chính sử dụng **Swiper Slider**.
+  * Slider danh mục sản phẩm nổi bật (Category Slider).
+  * Các khối hiển thị sản phẩm Bán chạy (Best Sellers), Sản phẩm mới (Latest).
+  * Thẻ tiện ích (Free Shipping, Money Return), khối Tin tức (Blog section) và chân trang (Footer).
+* **Trang danh sách sản phẩm (Product Listing Page)**:
+  * Thanh bộ lọc nâng cao bên trái (Filter Sidebar): Lọc theo danh mục, mức giá (Price Slider), thương hiệu và trạng thái tồn kho.
+  * Chuyển đổi linh hoạt chế độ xem dạng lưới (**Grid View**: 1, 2, 3, 4 cột) hoặc dạng danh sách (**List View**).
+* **Trang chi tiết sản phẩm (Product Details Page) &amp; Pop-up Modal**:
+  * Bộ sưu tập hình ảnh tích hợp tính năng phóng to (Product Zoom).
+  * Bộ chọn thuộc tính linh hoạt (Size, RAM, Trọng lượng) và nút tăng/giảm số lượng.
+  * Tab thông tin chi tiết: Mô tả sản phẩm, thông số kỹ thuật và khu vực bình luận/đánh giá (Reviews) kèm form gửi phản hồi.
+  * Modal xem nhanh sản phẩm (Product Quick View Modal) hiển thị dưới dạng pop-up khi nhấn từ trang chủ hoặc trang danh sách.
+* **Xác thực &amp; Tài khoản cá nhân**:
+  * Trang Đăng ký (Sign Up), Đăng nhập (Sign In) và Quên / Đặt lại mật khẩu.
+  * Giao diện Xác minh Email / OTP (Email Verification).
+  * Trang Hồ sơ tài khoản (My Account): Xem/Cập nhật thông tin, ảnh đại diện và Sổ địa chỉ nhận hàng (Address Book).
+* **Quy trình Mua hàng &amp; Quản lý đơn hàng**:
+  * **Trang Giỏ hàng (Cart Page)**: Bảng chi tiết giỏ hàng, cho phép sửa kích thước/số lượng, xóa sản phẩm và tính toán chiết khấu.
+  * **Trang Yêu thích (My List Page)**: Quản lý danh sách các sản phẩm đã lưu.
+  * **Trang Thanh toán (Checkout Page)**: Form nhập thông tin người nhận (Billing Details) và tóm tắt đơn hàng.
+  * **Trang Đơn hàng (My Orders Page)**: Bảng xem lịch sử các đơn hàng đã đặt kèm nút nhấn mở rộng thông tin chi tiết bên trong.
+
+---
+
+### **2\. Giao diện Quản trị (Admin Dashboard UI): Video #20 – Video #27**
+
+Giai đoạn này xây dựng Bảng điều khiển Admin riêng biệt sử dụng **React JS (Vite), Tailwind CSS, Material UI** và thư viện biểu đồ **Recharts / Richarts**:
+
+* **Khung giao diện Quản trị (Admin Layout &amp; Navigation)**:
+  * **Sidebar**: Thanh menu điều hướng bên trái hỗ trợ đóng/mở thu gọn (Toggle Sidebar).
+  * **Admin Header**: Thanh công cụ trên cùng chứa ô tìm kiếm, thông báo và menu tài khoản Admin.
+* **Trang Tổng quan (Overview Dashboard Page)**:
+  * Các thẻ thống kê chỉ số chính (Analytics Cards): Tổng đơn hàng (Total Orders), Tổng doanh thu (Sales Revenue), Tổng người dùng (Total Users), Tổng sản phẩm (Total Products).
+  * Biểu đồ phân tích doanh số (Line Chart / Bar Chart) dựng bằng **Recharts**.
+  * Bảng danh sách các đơn hàng gần đây (Recent Orders Table).
+* **Thiết kế Bảng dữ liệu (Data Tables) với 2 biến thể**:
+  * Biến thể 1: Bảng dữ liệu tùy chỉnh bằng **Tailwind CSS**.
+  * Biến thể 2: Bảng dữ liệu cao cấp bằng **Material UI Table** (tích hợp sẵn thanh cố định tiêu đề Sticky Header, bộ chọn số lượng dòng trên mỗi trang Rows per page, và thanh phân trang Pagination).
+* **Form nhập liệu &amp; Quản lý nội dung (Management Modules UI)**:
+  * **Quản lý Sản phẩm**: Form đăng/chỉnh sửa sản phẩm (Add/Edit Product Form) hỗ trợ chọn nhiều ảnh, phân loại danh mục cấp 1/2/3 và thiết lập các tùy chọn thuộc tính biến thể (RAM, Size, Weight).
+  * **Quản lý Danh mục**: Giao diện hiển thị và form thêm/sửa danh mục chính (Category) và danh mục con (Sub-Category).
+  * **Quản lý Đơn hàng &amp; Người dùng**: Bảng danh sách đơn hàng (Order Listing) kèm menu thả xuống cập nhật trạng thái đơn (Pending, Confirmed, Delivered) và Bảng quản lý người dùng (Users Listing).
+* **Trang Xác thực Quản trị (Admin Auth UI)**: Giao diện Đăng nhập (Sign In) và Đăng ký (Sign Up) dành riêng cho tài khoản Admin.
